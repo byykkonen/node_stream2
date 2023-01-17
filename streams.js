@@ -14,7 +14,7 @@ const server = createServer((req, res) => {
   } else {
     res.setHeader("Content-Type", "text/html");
     const readStream = createReadStream(
-      join(__dirname, "./public/notFound404.html")
+      join(__dirname, "./public/notFound.html")
     );
     readStream.pipe(res);
   }
